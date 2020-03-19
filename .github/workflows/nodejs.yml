@@ -20,6 +20,5 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
     - run: npm install -g morphir-elm
-    - run: pwd
     - run: ls -al  
-    - run: morphir-elm make --output ./morphir-examples/src/Morphir/Sample/Apps/bandr.js ./morphir-examples/src/Morphir/Sample/Apps/morphir.json
+    - run: morphir-elm make src/Morphir/Sample/Apps/morphir.json
