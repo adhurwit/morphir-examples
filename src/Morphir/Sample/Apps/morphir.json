@@ -1,0 +1,7 @@
+{
+    "name": "BooksAndRecords",
+    "sourceDirectory": "BooksAndRecords",
+    "exposedModules": [
+        "Deal"
+    ]
+}
