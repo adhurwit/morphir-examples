@@ -20,9 +20,5 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
     - run: npm install -g morphir-elm
-    - run: ls -al 
-    - run: ls -al src
-    - run: ls -al src/Morphir 
-    - run: ls -al src/Morphir/Sample
-    - run: ls -al src/Morphir/Sample/Apps
-    - run: morphir-elm make src/Morphir/Sample/Apps/morphir.json
+    - run: cd src/Morphir/Sample/Apps
+    - run: morphir-elm make morphir.json
